@@ -1,0 +1,27 @@
+<!doctype html>
+<html ng-app="app">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta http-equiv="content-language" content="pt-br" />
+   <title>AngularJS: Single Page com ngView e ngRoute</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <base href="/">
+
+</head>
+
+<body>
+   <ul class="nav nav-tabs">
+      <li ng-class="{active: activetab == '/'}"><a href="file:///C:/Users/eduar/Desktop/App/views/home.html">Home</a></li>
+      <li ng-class="{active: activetab == '/sobre'}"><a href="file:///C:/Users/eduar/Desktop/App/views/sobre.html">Sobre</a></li>
+      <li ng-class="{active: activetab == '/contato'}"><a href="file:///C:/Users/eduar/Desktop/App/views/contato.html">Contato</a></li>
+   </ul>
+
+   <div ng-view></div>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
+
+   <script src="app.js"></script>
+   <script src="controllers/controllers.js"></script>
+</body>
+</html>
